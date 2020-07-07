@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
-
+import deathstar from './Deathstar2.svg';
 
 class App extends Component {
 
     render() {
         return(
-            <div style={{marginTop:'150px',textAlign:'center'}}>
+            <div style={{textAlign:'center',marginTop:'40px'}}>
+                <img src={deathstar} style={{backgroundColor:'black',color:'white',zIndex:'-1',position:'absolute'}} /><br/>
                 A long time ago, in a galaxy far far away...<br/>
                 me and Hassan built an app <br/>
                 and we called it...<br/>
