@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Paper from '@material-ui/core/Paper';
+import {Link} from 'react-router-dom';
 
 
 class Starships extends Component {
@@ -7,8 +8,7 @@ class Starships extends Component {
         super(props)
         this.state = {
             nextPage: "https://swapi.dev/api/starships/",
-            starships: [],
-            show: false
+            starships: []
         }
     }
 
@@ -23,8 +23,7 @@ class Starships extends Component {
             console.log(data)
             this.setState({
                 nextPage: data.next,
-                starships: [...this.state.starships,...data.results],
-                show: true
+                starships: [...this.state.starships,...data.results]
             })
         })
     }
@@ -64,11 +63,15 @@ class Starships extends Component {
             <div>
                 {starshipList ?
                     <div style={{ display: 'flex', flexFlow: 'row wrap', justifyContent: 'space-around' }}>
-                        {starshipList.map((starship, idx) =>
+                        {starshipList.map((starship, idx) =>{
+                            let idStr = starship.url.split('/');
+                             let starshipID = idStr[5];
+                          return(  <Link to={{"pathname": `/starship/${starshipID}`}} >
                             <Paper key={idx} elevation={3} style={shadowStyle}>{starship.name}
                                 <img src={`${starship.url.replace('swapi.dev/api', 'crazyhappyfuntime.com/swimg')}1.jpg`} style={{ width: '100%', height: '126px', position: 'absolute', bottom: '2px', left: '0px' }} />
                             </Paper>
-                        )}
+                            </Link>)
+                    })}
                     </div>
                     :
                     <div>No data</div>
