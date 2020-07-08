@@ -52,8 +52,8 @@ class Starship extends Component {
             <div style={{marginTop:'60px'}}>
                 {starship ? 
                <div style={{width:'100',display:'flex',flexFlow:'row wrap',alignItems:'flex-start',alignContent:'space-between',justifyContent:'space-around'}}>
-               <div style={{width:'30%'}}><StarshipDetails ship={starship} /></div>
-               <div style={{width:'30%'}}><StarShipImage ship={starship}/></div>
+               <div style={{width:'40%'}}><StarshipDetails ship={starship} /></div>
+               <div style={{width:'40%',height:'400px'}}><StarShipImage ship={starship}/></div>
                </div>
                :
                ''

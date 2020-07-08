@@ -8,7 +8,7 @@ class StarshipImage extends Component {
         let imgUrl = shipUrl.replace('swapi.dev/api', 'crazyhappyfuntime.com/swimg') + '/1.jpg';
     return(
         <div>
-            <img src={imgUrl} style={{objectFit:'cover'}}/>
+            <img src={imgUrl} style={{width:'100%',height:'100%',border:'1px solid lightgrey'}}/>
         </div>
     )}
 }
