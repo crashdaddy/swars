@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import Paper from '@material-ui/core/Paper';
+import StarshipDetails from './StarshipDetails';
+import StarShipImage from './StarShipImage';
 
 
 class Starship extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            starships: []
+            starships: null
         }
     }
 
@@ -49,7 +50,14 @@ class Starship extends Component {
         }
         return (
             <div style={{marginTop:'60px'}}>
-               {starship.name}
+                {starship ? 
+               <div style={{width:'100',display:'flex',flexFlow:'row wrap',alignItems:'flex-start',alignContent:'space-between',justifyContent:'space-around'}}>
+               <div style={{width:'30%'}}><StarshipDetails ship={starship} /></div>
+               <div style={{width:'30%'}}><StarShipImage ship={starship}/></div>
+               </div>
+               :
+               ''
+                }
             </div>
         )
     }
