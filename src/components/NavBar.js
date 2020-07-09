@@ -45,6 +45,12 @@ export default function ButtonAppBar() {
             <Link to="/vehicles" >vehicles</Link>
             <span> - </span>
             <Link to="/species" >Species</Link>
+            <span> - </span>
+            <Link to="/people" >People</Link>
+            <span> - </span>
+            <Link to="/planets" >Planets</Link>
+            <span> - </span>
+            <Link to="/films" >Films</Link>
           </Typography>
         </Toolbar>
       </AppBar>
