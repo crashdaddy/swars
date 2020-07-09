@@ -8,7 +8,7 @@ class App extends Component {
             <div style={{textAlign:'center',marginTop:'40px'}}>
                 <img src={deathstar} style={{backgroundColor:'black',color:'white',zIndex:'-1',position:'absolute'}} /><br/>
                 A long time ago, in a galaxy far far away...<br/>
-                me and Hassan built an app <br/>
+                we built an app <br/>
                 and we called it...<br/>
                 <span style={{fontSize:'100px'}}>SWARS</span>
             </div>

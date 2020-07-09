@@ -55,7 +55,7 @@ class Films extends Component {
             WebkitBoxShadow: '5px 5px 5px 0px rgba(255, 255, 255, 0.25)',
             MozBoxShadow: '5px 5px 5px 0px rgba(255, 255, 255, 0.25)',
             boxShadow: '5px 5px 5px 0px rgba(255, 255, 255, 0.25)',
-            textAlign: 'center', width: '300px', 
+            textAlign: 'center', width: '350px', 
             margin: '15px', backgroundColor: 'lightgrey',color:'darkgrey',
             position: 'relative', height: '200px'
         }
@@ -68,7 +68,7 @@ class Films extends Component {
                              let starshipID = idStr[5];
                           return(  <Link to={{"pathname": `/film/${starshipID}`}} >
                             <Paper key={idx} elevation={3} style={shadowStyle}>{starship.name}
-                                <img src={`${starship.url.replace('swapi.dev/api', 'crazyhappyfuntime.com/swimg')}1.jpg`} style={{ width: '100%', height: '126px', position: 'absolute', bottom: '2px', left: '0px' }} />
+                                <img src={`${starship.url.replace('swapi.dev/api', 'crazyhappyfuntime.com/swimg')}1.jpg`} style={{ width: '100%', height: '100%', position: 'absolute', bottom: '2px', left: '0px' }} />
                             </Paper>
                             </Link>)
                     })}
