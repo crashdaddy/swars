@@ -41,15 +41,15 @@ export default function ButtonAppBar() {
           </Typography>
           <Typography variant="h6" className={classes.title}>
             <Link to="/starships" >Starships</Link>
-            <span> - </span>
+            <span style={{fontSize:'large',verticalAlign:'middle',margin:'5px'}}> $ </span>
             <Link to="/vehicles" >vehicles</Link>
-            <span> - </span>
-            <Link to="/species" >Species</Link>
-            <span> - </span>
+            <span style={{fontSize:'large',verticalAlign:'middle',margin:'5px'}}> $ </span>
+            <Link to="/species" >species</Link>
+            <span style={{fontSize:'large',verticalAlign:'middle',margin:'5px'}}> $ </span>
             <Link to="/people" >People</Link>
-            <span> - </span>
+            <span style={{fontSize:'large',verticalAlign:'middle',margin:'5px'}}> $ </span>
             <Link to="/planets" >Planets</Link>
-            <span> - </span>
+            <span style={{fontSize:'large',verticalAlign:'middle',margin:'5px'}}> $ </span>
             <Link to="/films" >Films</Link>
           </Typography>
         </Toolbar>
