@@ -41,6 +41,10 @@ export default function ButtonAppBar() {
           </Typography>
           <Typography variant="h6" className={classes.title}>
             <Link to="/starships" >Starships</Link>
+            <span> - </span>
+            <Link to="/vehicles" >vehicles</Link>
+            <span> - </span>
+            <Link to="/species" >Species</Link>
           </Typography>
         </Toolbar>
       </AppBar>
