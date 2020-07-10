@@ -67,7 +67,14 @@ class Vehicles extends Component {
                             let idStr = starship.url.split('/');
                              let starshipID = idStr[5];
                           return(  <Link to={{"pathname": `/vehicle/${starshipID}`}} >
-                            <Paper key={idx} elevation={3} style={shadowStyle}>{starship.name}
+                            <Paper key={idx} elevation={3} style={shadowStyle}>
+                            <div style={{ width: '350px', height: '100px', textAlign: 'center' }}>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox='0 0 300 24'>
+                                                <text textLength='290' lengthAdjust="spacing" x='5' y="14" height="100%" >
+                                                    {starship.name}
+                                                </text>
+                                            </svg>
+                                        </div>
                                 <img src={`${starship.url.replace('swapi.dev/api', 'crazyhappyfuntime.com/swimg')}1.jpg`} style={{ width: '100%', height: '140px', position: 'absolute', bottom: '2px', left: '0px' }} />
                             </Paper>
                             </Link>)

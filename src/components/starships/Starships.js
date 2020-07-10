@@ -70,9 +70,9 @@ class Starships extends Component {
 
                                 <Link to={{ "pathname": `/starship/${starshipID}` }} >
                                     <Paper key={idx} elevation={3} style={shadowStyle}>
-                                        <div style={{ width: '350px', height: '100px', border: '1px solid yellow', textAlign: 'center' }}>
+                                        <div style={{ width: '350px', height: '100px', textAlign: 'center' }}>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox='0 0 300 24'>
-                                                <text textLength='290' lengthAdjust="spacing" x='5' y="14" >
+                                                <text textLength='290' lengthAdjust="spacing" x='5' y="14" height="100%" >
                                                     {starship.name}
                                                 </text>
                                             </svg>
