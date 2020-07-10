@@ -36,7 +36,7 @@ class SpeciesDetails extends Component {
           let personID = idStr[5];
           return (
 
-            <Link to={{ "pathname": `/people/${personID}` }}> <img src={`${person.replace('swapi.dev/api', 'crazyhappyfuntime.com/swimg')}1.jpg`} style={{ display: 'inline', width: '60px', border: '1px solid white', height: '60px', marginRight: '5px', verticalAlign: 'middle' }} /></Link>
+            <Link to={{ "pathname": `/person/${personID}` }}> <img src={`${person.replace('swapi.dev/api', 'crazyhappyfuntime.com/swimg')}1.jpg`} style={{ display: 'inline', width: '60px', border: '1px solid white', height: '60px', marginRight: '5px', verticalAlign: 'middle' }} /></Link>
           )
         })}<p />
       </div>
