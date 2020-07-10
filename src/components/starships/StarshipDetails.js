@@ -28,7 +28,7 @@ class StarshipDetails extends Component {
 
             <Link to={{ "pathname": `/person/${pilotID}` }}> <img src={`${pilot.replace('swapi.dev/api', 'crazyhappyfuntime.com/swimg')}1.jpg`} style={{ display: 'inline', width: '60px', border: '1px solid white', height: '60px', marginRight: '5px' }} /></Link>
           )
-        })}
+        })}<p/>
 
         <span style={{ color: 'lightgreen', verticalAlign: 'middle' }}>Films: </span>{this.props.ship.films && this.props.ship.films.map(film => {
           let idStr = film.split('/');
@@ -37,7 +37,7 @@ class StarshipDetails extends Component {
 
             <Link to={{ "pathname": `/film/${filmID}` }}> <img src={`${film.replace('swapi.dev/api', 'crazyhappyfuntime.com/swimg')}1.jpg`} style={{ display: 'inline', width: '60px', border: '1px solid white', height: '60px', marginRight: '5px', verticalAlign: 'middle' }} /></Link>
           )
-        })}
+        })}<p/>
       </div>
     )
   }
