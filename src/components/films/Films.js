@@ -57,7 +57,7 @@ class Films extends Component {
             boxShadow: '5px 5px 5px 0px rgba(255, 255, 255, 0.25)',
             textAlign: 'center', width: '350px', 
             margin: '15px', backgroundColor: 'lightgrey',color:'darkgrey',
-            position: 'relative', height: '200px'
+            position: 'relative', height: '400px'
         }
         return (
             <div>
