@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 class PersonDetails extends Component {
 
   render() {
+    let homeworld=this.props.ship.homeworld.split('/');
+    let homeworldID = homeworld[5];
 
     return (
       <div style={{ color: 'lightyellow' }}>
@@ -50,7 +52,15 @@ class PersonDetails extends Component {
         })}<p />
 
         <span style={{ color: 'lightgreen', verticalAlign: 'middle' }}>Homeworld: </span>
-        <Link to={{ "pathname": `/planets/` }}> <img src={`${this.props.ship.homeworld.replace('swapi.dev/api', 'crazyhappyfuntime.com/swimg')}1.jpg`} style={{ display: 'inline', width: '60px', border: '1px solid white', height: '60px', marginRight: '5px', verticalAlign: 'middle' }} /></Link>
+        {
+
+         ()=> { return (
+
+            <div>himom</div>
+          )
+         }
+        }
+        <Link to={{ "pathname": `/planet/${homeworldID}` }}> <img src={`${this.props.ship.homeworld.replace('swapi.dev/api', 'crazyhappyfuntime.com/swimg')}1.jpg`} style={{ display: 'inline', width: '60px', border: '1px solid white', height: '60px', marginRight: '5px', verticalAlign: 'middle' }} /></Link>
         <p />
         <span style={{ color: 'lightgreen', verticalAlign: 'middle' }}>Species: </span>{this.props.ship.species && this.props.ship.species.map(specie => {
           let idStr = specie.split('/');
