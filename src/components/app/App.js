@@ -11,6 +11,10 @@ class App extends Component {
                 we built an app <br/>
                 and we called it...<br/>
                 <span style={{fontSize:'100px'}}>SWARS</span>
+                <div style={{fontSize:'10pt',fontFamily:'Tahoma',color:'lightgreen'}}>
+
+                    Data provided by: <a href="https://swapi.dev/" target="blank" >Star Wars API</a>
+                </div>
             </div>
 
         )
