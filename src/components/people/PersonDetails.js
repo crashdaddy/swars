@@ -12,7 +12,7 @@ class PersonDetails extends Component {
         {
           Object.keys(this.props.ship).map((key, i) => {
 
-            if (key !== "vehicles" && key !== "url" && key !== "films" && key !== "starships" && key !== "homeworld") {
+            if (key !== "vehicles" && key !== "url" && key !== "films" && key !== "starships" && key !== "homeworld" && key !== "species") {
               return (
                 <span key={i}>
                   <span style={{ color: 'lightgreen', marginRight: '4px' }}>{key}:</span>
@@ -52,7 +52,14 @@ class PersonDetails extends Component {
         <span style={{ color: 'lightgreen', verticalAlign: 'middle' }}>Homeworld: </span>
         <Link to={{ "pathname": `/planets/` }}> <img src={`${this.props.ship.homeworld.replace('swapi.dev/api', 'crazyhappyfuntime.com/swimg')}1.jpg`} style={{ display: 'inline', width: '60px', border: '1px solid white', height: '60px', marginRight: '5px', verticalAlign: 'middle' }} /></Link>
         <p />
+        <span style={{ color: 'lightgreen', verticalAlign: 'middle' }}>Species: </span>{this.props.ship.species && this.props.ship.species.map(specie => {
+          let idStr = specie.split('/');
+          let speciesID = idStr[5];
+          return (
 
+            <Link to={{ "pathname": `/specie/${speciesID}` }}> <img src={`${specie.replace('swapi.dev/api', 'crazyhappyfuntime.com/swimg')}1.jpg`} style={{ display: 'inline', width: '60px', border: '1px solid white', height: '60px', marginRight: '5px', verticalAlign: 'middle' }} /></Link>
+          )
+        })}<p />
       </div>
     )
   }
