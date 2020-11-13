@@ -76,7 +76,7 @@ class People extends Component {
                                                 </text>
                                             </svg>
                                         </div>
-                                <img src={`${starship.url.replace('swapi.dev/api', 'http://swarsapi.herokuapp.com/swimg')}1.jpg`} style={{ width: '100%', height: '140px', position: 'absolute', bottom: '2px', left: '0px' }} />
+                                <img src={`${starship.url.replace('swapi.dev/api', 'swarsapi.herokuapp.com/swimg')}1.jpg`} style={{ width: '100%', height: '140px', position: 'absolute', bottom: '2px', left: '0px' }} />
                             </Paper>
                             </Link>)
                     })}
