@@ -26,7 +26,7 @@ class FilmDetails extends Component {
           let characterID = idStr[5];
           return (
 
-            <Link to={{ "pathname": `/person/${characterID}` }}><img src={`${character.replace('swapi.dev/api', 'crazyhappyfuntime.com/swimg')}1.jpg`} style={{ display: 'inline', width: '60px', border: '1px solid white', height: '60px', marginRight: '5px', verticalAlign: 'middle' }} /></Link>
+            <Link to={{ "pathname": `/person/${characterID}` }}><img src={`${character.replace('swapi.dev/api', 'swarsapi.herokuapp.com/swimg')}1.jpg`} style={{ display: 'inline', width: '60px', border: '1px solid white', height: '60px', marginRight: '5px', verticalAlign: 'middle' }} /></Link>
           )
         })}<p/>
 
@@ -35,7 +35,7 @@ class FilmDetails extends Component {
           let starshipID = idStr[5];
           return (
 
-            <Link to={{ "pathname": `/starship/${starshipID}` }}><img src={`${starship.replace('swapi.dev/api', 'crazyhappyfuntime.com/swimg')}1.jpg`} style={{ display: 'inline', width: '60px', border: '1px solid white', height: '60px', marginRight: '5px', verticalAlign: 'middle' }} /></Link>
+            <Link to={{ "pathname": `/starship/${starshipID}` }}><img src={`${starship.replace('swapi.dev/api', 'swarsapi.herokuapp.com/swimg')}1.jpg`} style={{ display: 'inline', width: '60px', border: '1px solid white', height: '60px', marginRight: '5px', verticalAlign: 'middle' }} /></Link>
           )
         })}<p/>
 
@@ -44,7 +44,7 @@ class FilmDetails extends Component {
           let vehicleID = idStr[5];
           return (
 
-            <Link to={{ "pathname": `/vehicle/${vehicleID}` }}><img src={`${vehicle.replace('swapi.dev/api', 'crazyhappyfuntime.com/swimg')}1.jpg`} style={{ display: 'inline', width: '60px', border: '1px solid white', height: '60px', marginRight: '5px', verticalAlign: 'middle' }} /></Link>
+            <Link to={{ "pathname": `/vehicle/${vehicleID}` }}><img src={`${vehicle.replace('swapi.dev/api', 'swarsapi.herokuapp.com/swimg')}1.jpg`} style={{ display: 'inline', width: '60px', border: '1px solid white', height: '60px', marginRight: '5px', verticalAlign: 'middle' }} /></Link>
           )
         })}<p/>
 
@@ -53,7 +53,7 @@ class FilmDetails extends Component {
           let specieID = idStr[5];
           return (
 
-            <Link to={{ "pathname": `/specie/${specieID}` }}><img src={`${specie.replace('swapi.dev/api', 'crazyhappyfuntime.com/swimg')}1.jpg`} style={{ display: 'inline', width: '60px', border: '1px solid white', height: '60px', marginRight: '5px', verticalAlign: 'middle' }} /></Link>
+            <Link to={{ "pathname": `/specie/${specieID}` }}><img src={`${specie.replace('swapi.dev/api', 'swarsapi.herokuapp.com/swimg')}1.jpg`} style={{ display: 'inline', width: '60px', border: '1px solid white', height: '60px', marginRight: '5px', verticalAlign: 'middle' }} /></Link>
           )
         })}  <p/>
 
@@ -62,7 +62,7 @@ class FilmDetails extends Component {
           let planetID = idStr[5];
           return (
 
-            <Link to={{ "pathname": `/planet/${planetID}` }}><img src={`${planet.replace('swapi.dev/api', 'crazyhappyfuntime.com/swimg')}1.jpg`} style={{ display: 'inline', width: '60px', border: '1px solid white', height: '60px', marginRight: '5px', verticalAlign: 'middle' }} /></Link>
+            <Link to={{ "pathname": `/planet/${planetID}` }}><img src={`${planet.replace('swapi.dev/api', 'swarsapi.herokuapp.com/swimg')}1.jpg`} style={{ display: 'inline', width: '60px', border: '1px solid white', height: '60px', marginRight: '5px', verticalAlign: 'middle' }} /></Link>
           )
         })}<p/>
       </div>

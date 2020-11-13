@@ -31,7 +31,7 @@ class PersonDetails extends Component {
           let filmID = idStr[5];
           return (
 
-            <Link to={{ "pathname": `/film/${filmID}` }}> <img src={`${film.replace('swapi.dev/api', 'crazyhappyfuntime.com/swimg')}1.jpg`} style={{ display: 'inline', width: '60px', border: '1px solid white', height: '60px', marginRight: '5px', verticalAlign: 'middle' }} /></Link>
+            <Link to={{ "pathname": `/film/${filmID}` }}> <img src={`${film.replace('swapi.dev/api', 'swarsapi.herokuapp.com/swimg')}1.jpg`} style={{ display: 'inline', width: '60px', border: '1px solid white', height: '60px', marginRight: '5px', verticalAlign: 'middle' }} /></Link>
           )
         })}<p />
         <span style={{ color: 'lightgreen', verticalAlign: 'middle' }}>Vehicles: </span>{this.props.ship.vehicles && this.props.ship.vehicles.map(vehicle => {
@@ -39,7 +39,7 @@ class PersonDetails extends Component {
           let vehicleID = idStr[5];
           return (
 
-            <Link to={{ "pathname": `/vehicle/${vehicleID}` }}> <img src={`${vehicle.replace('swapi.dev/api', 'crazyhappyfuntime.com/swimg')}1.jpg`} style={{ display: 'inline', width: '60px', border: '1px solid white', height: '60px', marginRight: '5px', verticalAlign: 'middle' }} /></Link>
+            <Link to={{ "pathname": `/vehicle/${vehicleID}` }}> <img src={`${vehicle.replace('swapi.dev/api', 'swarsapi.herokuapp.com/swimg')}1.jpg`} style={{ display: 'inline', width: '60px', border: '1px solid white', height: '60px', marginRight: '5px', verticalAlign: 'middle' }} /></Link>
           )
         })}<p />
         <span style={{ color: 'lightgreen', verticalAlign: 'middle' }}>Starships: </span>{this.props.ship.starships && this.props.ship.starships.map(starship => {
@@ -47,7 +47,7 @@ class PersonDetails extends Component {
           let starshipID = idStr[5];
           return (
 
-            <Link to={{ "pathname": `/starship/${starshipID}` }}> <img src={`${starship.replace('swapi.dev/api', 'crazyhappyfuntime.com/swimg')}1.jpg`} style={{ display: 'inline', width: '60px', border: '1px solid white', height: '60px', marginRight: '5px', verticalAlign: 'middle' }} /></Link>
+            <Link to={{ "pathname": `/starship/${starshipID}` }}> <img src={`${starship.replace('swapi.dev/api', 'swarsapi.herokuapp.com/swimg')}1.jpg`} style={{ display: 'inline', width: '60px', border: '1px solid white', height: '60px', marginRight: '5px', verticalAlign: 'middle' }} /></Link>
           )
         })}<p />
 
@@ -60,14 +60,14 @@ class PersonDetails extends Component {
           )
          }
         }
-        <Link to={{ "pathname": `/planet/${homeworldID}` }}> <img src={`${this.props.ship.homeworld.replace('swapi.dev/api', 'crazyhappyfuntime.com/swimg')}1.jpg`} style={{ display: 'inline', width: '60px', border: '1px solid white', height: '60px', marginRight: '5px', verticalAlign: 'middle' }} /></Link>
+        <Link to={{ "pathname": `/planet/${homeworldID}` }}> <img src={`${this.props.ship.homeworld.replace('swapi.dev/api', 'swarsapi.herokuapp.com/swimg')}1.jpg`} style={{ display: 'inline', width: '60px', border: '1px solid white', height: '60px', marginRight: '5px', verticalAlign: 'middle' }} /></Link>
         <p />
         <span style={{ color: 'lightgreen', verticalAlign: 'middle' }}>Species: </span>{this.props.ship.species && this.props.ship.species.map(specie => {
           let idStr = specie.split('/');
           let speciesID = idStr[5];
           return (
 
-            <Link to={{ "pathname": `/specie/${speciesID}` }}> <img src={`${specie.replace('swapi.dev/api', 'crazyhappyfuntime.com/swimg')}1.jpg`} style={{ display: 'inline', width: '60px', border: '1px solid white', height: '60px', marginRight: '5px', verticalAlign: 'middle' }} /></Link>
+            <Link to={{ "pathname": `/specie/${speciesID}` }}> <img src={`${specie.replace('swapi.dev/api', 'swarsapi.herokuapp.com/swimg')}1.jpg`} style={{ display: 'inline', width: '60px', border: '1px solid white', height: '60px', marginRight: '5px', verticalAlign: 'middle' }} /></Link>
           )
         })}<p />
       </div>

@@ -26,7 +26,7 @@ class StarshipDetails extends Component {
           let pilotID = idStr[5];
           return (
 
-            <Link to={{ "pathname": `/person/${pilotID}` }}> <img src={`${pilot.replace('swapi.dev/api', 'crazyhappyfuntime.com/swimg')}1.jpg`} style={{ display: 'inline', width: '60px', border: '1px solid white', height: '60px', marginRight: '5px' }} /></Link>
+            <Link to={{ "pathname": `/person/${pilotID}` }}> <img src={`${pilot.replace('swapi.dev/api', 'swarsapi.herokuapp.com/swimg')}1.jpg`} style={{ display: 'inline', width: '60px', border: '1px solid white', height: '60px', marginRight: '5px' }} /></Link>
           )
         })}<p/>
 
@@ -35,7 +35,7 @@ class StarshipDetails extends Component {
           let filmID = idStr[5];
           return (
 
-            <Link to={{ "pathname": `/film/${filmID}` }}> <img src={`${film.replace('swapi.dev/api', 'crazyhappyfuntime.com/swimg')}1.jpg`} style={{ display: 'inline', width: '60px', border: '1px solid white', height: '60px', marginRight: '5px', verticalAlign: 'middle' }} /></Link>
+            <Link to={{ "pathname": `/film/${filmID}` }}> <img src={`${film.replace('swapi.dev/api', 'swarsapi.herokuapp.com/swimg')}1.jpg`} style={{ display: 'inline', width: '60px', border: '1px solid white', height: '60px', marginRight: '5px', verticalAlign: 'middle' }} /></Link>
           )
         })}<p/>
       </div>

@@ -28,7 +28,7 @@ class SpeciesDetails extends Component {
           let filmID = idStr[5];
           return (
 
-            <Link to={{ "pathname": `/film/${filmID}` }}> <img src={`${film.replace('swapi.dev/api', 'crazyhappyfuntime.com/swimg')}1.jpg`} style={{ display: 'inline', width: '60px', border: '1px solid white', height: '60px', marginRight: '5px', verticalAlign: 'middle' }} /></Link>
+            <Link to={{ "pathname": `/film/${filmID}` }}> <img src={`${film.replace('swapi.dev/api', 'swarsapi.herokuapp.com/swimg')}1.jpg`} style={{ display: 'inline', width: '60px', border: '1px solid white', height: '60px', marginRight: '5px', verticalAlign: 'middle' }} /></Link>
           )
         })}<p />
         <span style={{ color: 'lightgreen', verticalAlign: 'middle' }}>People: </span>{this.props.ship.people && this.props.ship.people.map(person => {
@@ -36,7 +36,7 @@ class SpeciesDetails extends Component {
           let personID = idStr[5];
           return (
 
-            <Link to={{ "pathname": `/person/${personID}` }}> <img src={`${person.replace('swapi.dev/api', 'crazyhappyfuntime.com/swimg')}1.jpg`} style={{ display: 'inline', width: '60px', border: '1px solid white', height: '60px', marginRight: '5px', verticalAlign: 'middle' }} /></Link>
+            <Link to={{ "pathname": `/person/${personID}` }}> <img src={`${person.replace('swapi.dev/api', 'swarsapi.herokuapp.com/swimg')}1.jpg`} style={{ display: 'inline', width: '60px', border: '1px solid white', height: '60px', marginRight: '5px', verticalAlign: 'middle' }} /></Link>
           )
         })}<p />
       </div>
