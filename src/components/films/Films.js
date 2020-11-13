@@ -68,7 +68,7 @@ class Films extends Component {
                              let starshipID = idStr[5];
                           return(  <Link to={{"pathname": `/film/${starshipID}`}} >
                             <Paper key={idx} elevation={3} style={shadowStyle}>{starship.name}
-                                <img src={`${starship.url.replace('swapi.dev/api', 'crazyhappyfuntime.com/swimg')}1.jpg`} style={{ width: '100%', height: '100%', position: 'absolute', bottom: '2px', left: '0px' }} />
+                                <img src={`${starship.url.replace('swapi.dev/api', 'http://swarsapi.herokuapp.com/swimg')}1.jpg`} style={{ width: '100%', height: '100%', position: 'absolute', bottom: '2px', left: '0px' }} />
                             </Paper>
                             </Link>)
                     })}
